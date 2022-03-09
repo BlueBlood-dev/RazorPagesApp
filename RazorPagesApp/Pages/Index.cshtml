@@ -1,10 +1,41 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "WelcomePage";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<style>
+
+.flex-container {
+        display: flex;
+        align-items: center;         
+        width: 100%;
+        height: 200px;
+        background-color: #ffe6ff;
+      }
+      .flex-container > div {
+        width: 25%;
+        height: 60px;
+        margin: 5px;
+        border-radius: 5px;
+        background-color: #ffe6ff;
+      }
+
+</style>
+
+<div class="flex-container">
+    <h1>social media:</h1>
+        <ul>
+        <li><a href="https://github.com/BlueBlood-dev">GitHub</a></li>
+        <li>Telegram: bluebloodedshit</li>
+        <li><a href ="https://open.spotify.com/user/yq5817u7g8g218rzyc1tgs9vd?si=b64557b63d054a9a">Spotify</a></li>
+        <li>gmail: khashchuk.denis@gmail.com</li>
+    </ul>
+    <br />
+    <br />
+    <br />
+    <hr />
+    <p>
+        <a href ="/Notes" color = "grey">Go to the Notebook</a>
+    </p>
 </div>
